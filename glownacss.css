@@ -1,0 +1,491 @@
+header {
+    width: 100vw;
+    height: 60px;
+    background-image: linear-gradient(to left, rgba(241, 0, 0, 0.89), rgba(192, 0, 0, 087));
+    margin: 0%;
+    border: solid 3px black;
+    border-bottom-left-radius: 10px;
+    position: fixed;
+    top:0px
+}
+
+body {
+    margin: 0;
+    background: url(rowerekbg2.jpg) no-repeat, url(rowerekbg3.jpg) no-repeat bottom, url(rowerekbg4.jpg) no-repeat center;
+    background-size: 100%;
+}
+
+.menuglowne {
+    width: 200px;
+    height: 300px;
+    background-image: linear-gradient(135deg, rgba(3, 3, 3, 0.98), rgba(75, 73, 73, 0.85));
+    position: absolute;
+    right: -210px;
+    top: 80px;
+    font-size: 34px;
+    text-align: center;
+    border: 2px solid white;
+    box-shadow: rgb(0, 0, 0) 1px 1px 5px;
+}
+
+.burger1,
+.burger2,
+.burger3 {
+    width: 35px;
+    height: 8px;
+    border-top: 6px white solid;
+    border-top-right-radius: 2px;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.burger2 {
+    top: 13px;
+    right: 10px;
+}
+
+.burger3 {
+    top: 26px;
+    right: 10px;
+}
+
+.burgerek {
+    position: fixed;
+    right: 7px;
+    top: 18px;
+    height: 65px;
+    width: 50px;
+    min-width: 50px;
+}
+
+
+li {
+    list-style-type: none;
+}
+
+.dzialyglowne {
+    margin-top: 55px;
+    text-align: center;
+    margin-left: -19px;
+}
+
+.dzialyglowne>li:hover {
+    background-color: rgba(253, 253, 253, 0.078);
+    font-size: 35.1px;
+    border-radius: 10px;
+    text-shadow: 1px 2px 5px rgb(2, 2, 2);
+    box-shadow: 0px 0px 7px black;
+}
+
+.dzialyglowne>li {
+    width: 120px;
+    padding-right:20px;
+    padding-left:20px;
+    padding-bottom: 5px;
+}
+
+.burgermenu:hover .menuglowne {
+    animation: linear 1s ease-in-out;
+    animation-name: animacja_menu1;
+    position: absolute;
+    right: 20px;
+    top: 80px;
+}
+
+@keyframes animacja_menu1 {
+    0% {
+        position: absolute;
+        right: -220px;
+        top: 80px;
+    }
+
+    60% {
+        position: absolute;
+        right: -50px;
+        top: 80px;
+    }
+
+    100% {
+        position: absolute;
+        right: 20px;
+        top: 80px;
+    }
+}
+
+.burgermenu:hover .burger1 {
+    width: 0px;
+    height: 25px;
+    border-left: 8px solid white;
+    position: absolute;
+    right: 22px;
+    transform: skewX(45deg);
+}
+
+.burgermenu:hover .burger2 {
+    width: 0px;
+    height: 25px;
+    border-left: 8px solid white;
+    position: absolute;
+    top: 0px;
+    right: 22px;
+    transform: skewX(-45deg);
+}
+
+.burgermenu:hover .burger3 {
+    visibility: hidden;
+}
+
+.tytulmenu {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 2px 2px 10px rgb(31, 30, 30);
+    color: rgb(255, 255, 255);
+    padding-bottom:13px;
+    border-bottom:3px solid rgb(255, 255, 254);
+    text-shadow: 2px 2px 1px black;
+}
+
+.menupoziom {
+    text-align: center;
+    width: 80vw;
+    height: 60px;
+}
+
+.naglowkowa {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+    position: fixed;
+    top: 20px;
+    right: 12vw;
+    width: 360px;
+}
+
+.naglowkowa>li {
+    margin-right: 10px;
+    font-size: 30px;
+    border-right: solid black 1px;
+    padding-right: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.naglowkowa>li:hover{
+    text-shadow: 2px 2px 1px black;
+    font-size:30.5px;
+}
+
+.logo img {
+    display: block;
+    position: fixed;
+    width: 110px;
+    min-width: 110px;
+    margin-left:20px;
+    opacity:0.9;
+}
+
+article {
+    margin-left: 17.5%;
+    width: 65vw;
+    margin-top: 100px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.naglowkowa li a{
+    text-decoration: none;
+    color:white;
+}
+.naglowkowa li a:active{
+    text-shadow: 2px 2px 10px;
+    color:black;
+}
+section{
+    background-image: linear-gradient(-45deg, rgba(34, 33, 33, 0.87), rgba(0, 0, 0, 0.93));
+    font-size:20px;
+    border: solid 1px white;
+    text-align: center;
+    box-shadow: 1px 1px 3px black;
+}
+.Kontakt img{
+    width:63vw;
+    border:2px rgb(0, 0, 0) solid;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+h1{
+    font-size: 40px;
+    font-family:Impact, 'Arial Narrow Bold', sans-serif;
+    color:rgba(21, 255, 0, 0.877);
+    letter-spacing: 4px;
+    text-shadow:3px 3px 1px black
+
+}
+.tresc{
+    color:rgb(255, 255, 255);
+    margin:50px;
+}
+.wyroznienie2{
+    color:red;
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
+    font-size: 105%;
+}
+footer{
+    margin-top: 130px;
+    background-color: rgba(0, 0, 0, 0.935);
+    color:rgb(161, 161, 161);
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    border:white 1px solid;
+}
+.wyroznienie{
+    color:rgb(200, 255, 0);
+    font-weight: bold;
+    text-shadow: 2px 2px 3px black;
+    font-size: 105%;
+}
+.wyroznienie3{
+    color: rgb(255, 0, 106);
+    font-size: 130%;
+    text-shadow: 1px 1px 1px black;
+}
+.wyroznienie4{
+    color:rgb(87, 255, 9);
+    font-size: 140%;
+    text-shadow: 1px 1px 1px black;
+}
+.dzialyglowne a{
+    text-shadow:2px 2px 1px black;
+    text-decoration: none;
+    color: rgb(255, 0, 106);
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+@media only screen and (max-width:1125px) {
+    body{
+        background:url(rowerekbg2.jpg) top no-repeat,  url(rowerekbg4.jpg) no-repeat center, url(rowerekbg3.jpg) no-repeat bottom;
+    }
+}
+@media only screen and (max-width:760px) {
+    body{
+        background:url(rowerekbg2.jpg) top no-repeat,  url(rowerekbg4.jpg) no-repeat -500px 900px , url(rowerekbg3.jpg) no-repeat bottom;
+    }
+    .naglowkowa{
+        position: fixed;
+        top: 20px;
+        right: 60px;
+    }
+    .tresc{
+        font-size: 17px;
+    }
+    h1{
+        font-size: 36px;
+    }
+    section{
+        width:80vw;
+        margin-left:-10vw
+    }
+    .Kontakt img{
+        width: 76vw;
+    }
+    footer{
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-top: 80px;
+    }
+}
+@media only screen and (max-width:600px) {
+    body{
+        background:url(rowerekbg2.jpg) top no-repeat, url(rowerekbg4.jpg) no-repeat -700px 910px;
+    }
+    .naglowkowa{
+        margin-top: 2px;
+    }
+    .naglowkowa>li{
+        font-size: 23px;
+    }
+    .naglowkowa>li:hover{
+        font-size: 23.5px;
+    }
+    .logo img{
+        margin-left:2px;
+    }
+    .menuglowne{
+        width: 150px;
+        height: 225px;
+        font-size: 28px;
+    }
+    .tytulmenu{
+        font-size: 38px;
+    }
+    .dzialyglowne{
+        padding-left: 15px;
+        margin-top: 45px;
+        margin-left: -2px;
+    }
+    .dzialyglowne li:hover{
+        font-size:28.5px
+    }
+    .tresc{
+        font-size: 16px;
+        margin:20px;
+        margin-bottom: 50px;
+    }
+    footer{
+        font-size: 13px;
+    }
+    .dzialyglowne>li {
+        width: 120px;
+        padding-right:2px;
+        padding-left:2px;
+        padding-bottom: 5px;
+    }
+    .burgerek{
+        transform: scale( 0.9);
+    }
+    .Kontakt img{
+        height: 100px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .naglowkowa{
+        margin-top: 5px;
+        margin-right: -10px;
+    }
+    .naglowkowa>li{
+        font-size: 20px;
+    }
+    .naglowkowa>li:hover{
+        font-size: 20.5px;
+    }
+    body{
+        background:url(rowerekbg4.jpg) no-repeat center 0px 0px, url(rowerekbg2.jpg) no-repeat,  url(rowerekbg3.jpg) no-repeat bottom;
+    }
+    .burgerek{
+        transform: scale( 0.85);
+    }
+}
+.opona{
+    position: relative;
+    width:150px;
+    height: 150px;
+    border:20px solid black;
+    border-radius: 50%;
+    z-index: 3;
+}
+.kolo{
+    position: absolute;
+    top:0%;
+    left:0%;
+    width:133.5px;
+    height: 133.5px;
+    margin: 0;
+    border: 8px solid rgb(0, 255, 21);
+    border-radius: 50%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.os{
+    width:13px;
+    height: 13px;
+    background-color: rgb(229, 255, 0);
+    border-radius: 50%;
+    z-index: 1;
+    border: 1px solid rgb(0, 255, 13);
+}
+
+.szprycha1, .szprycha2, .szprycha3, .szprycha4{
+    width:3px;
+    height: 133.5px;
+    background-color: rgb(133, 132, 132);
+    z-index: -1;
+    border: 1px solid rgb(218, 217, 217);
+    position: absolute;
+    left:64px;
+    bottom:-1.1px;
+}
+
+.szprycha2{
+    transform:rotate(-45deg);
+}
+.szprycha3{
+    transform:rotate(45deg);
+}
+.szprycha4{
+    position: absolute;
+    left:64.5px;
+    transform: rotate(90deg);
+}
+.ladowanie{
+    position: fixed;
+    left:45vw;
+    top:40vh;
+    animation: 1s linear ease-in-out;
+    animation-name: animacja2;
+    margin: 0;
+    padding: 0;
+    transform: scale(0.0);
+}
+.naklejka1, .naklejka2{
+    width:40px;
+    height:20px;
+    color: yellow;
+    z-index: 1;
+    transform: rotate(-45deg);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 1px 1px 2px red;
+    font-size: 18px;
+}
+.naklejka1{
+    position: absolute;
+    left:-7px;
+    top:5px
+}
+.naklejka2{
+    position: absolute;
+    bottom:11px;
+    left:118px;
+}
+
+@keyframes animacja2{
+    from {
+        transform: rotate(0deg) scale(0.0);
+    }
+    to {
+       transform: rotate(360deg) scale(2.0);
+    }
+}
+@media only screen and (max-width:1250px) {
+    .ladowanie{
+        position: fixed;
+        left:41vw;
+    }
+}
+@media only screen and (max-width:800px) {
+    .ladowanie{
+        position: fixed;
+        left:39vw;
+    }
+}
+@media only screen and (max-width:650px) {
+    
+    .ladowanie{
+        position: fixed;
+        left:35vw;
+    }
+}
+@media only screen and (max-width:500px) {
+    .ladowanie{
+        position: fixed;
+        left:28vw;
+        top:37vh;
+    }
+}
